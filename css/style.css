@@ -21,7 +21,7 @@ h1, h2 {
 
 .welcome {
     height: 100vmax; /* Plein écran */
-    display: flexbox;
+    display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden; /* Masquer le débordement */
@@ -50,9 +50,9 @@ nav ul {
 }
 
 nav ul li {
-    display: inline; /* Liens en ligne */
-    margin: 0 15px;
-}
+    display: inline-block; /* Liens en ligne */
+    margin: 0 20px;
+    padding: 10px 0;
 
 nav a {
     text-decoration: none;
