@@ -21,12 +21,14 @@ header {
 
 h1, h2 {
     color: #c9d4d4;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Ombre portée */
 }
 
 .welcome {
     height: 100vmax; /* Plein écran */
     display: flex;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond noir semi-transparent */
     justify-content: center;
     overflow: hidden; /* Masquer le débordement */
     position: relative; /* Pour l'animation */
@@ -35,7 +37,7 @@ h1, h2 {
 .welcome h2 {
     font-size: 3rem;
     position: absolute; /* Pour le défilement */
-    animation: scroll 10s linear infinite; /* Animation de défilement */
+    animation: scroll 3s linear infinite; /* Animation de défilement */
 }
 
 @keyframes scroll {
@@ -50,7 +52,7 @@ nav {
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
 }
 
 nav ul li {
