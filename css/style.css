@@ -47,22 +47,22 @@ h1, h2 {
 
 nav {
     text-align: center;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 10px;
+    padding: 20px;
 }
 
 nav ul li {
     display: inline-block; /* Liens en ligne */
-    margin: 0 40px;
-    padding: 20px 0;
+    margin: 0 60px;
+    padding: 30px 0;
 
 nav a {
-    text-decoration: none;
-    color: #007BFF;
+    text-decoration: navajowhite;
+    color: #c8dcdd;
     font-weight: bold;
 }
 
@@ -73,13 +73,13 @@ nav a:hover {
 .content {
     margin: 30px;
     padding: 30px;
-    background-color: gray;
+    background-color: rgba(24, 10, 10, 0.452);
     border-radius: 10px;
 }
 
 footer {
     background-color: #333;
-    color: rgb(19, 124, 51);
+    color: rgb(213, 223, 216);
     text-align: center;
     padding: 10px;
 }
