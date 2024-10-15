@@ -4,8 +4,11 @@ body {
     font-family: 'Ubuntu Condensed', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('dona-erick/dona-erick.github.io/images/stokin.jpg');
-    background-color: #10a7e2bd; /* Couleur de fond */
+    background-image: url('../images/stokin.jpg');
+
+    /*background-color: #10a7e2bd; /* Couleur de fond */
+    background-position: center;
+    background-size: cover;
     color: #c70d0d;
 }
 
