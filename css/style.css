@@ -5,11 +5,9 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('../images/stokin.jpg');
-
-    /*background-color: #10a7e2bd; /* Couleur de fond */
     background-position: center;
-    background-size: center;
-    color: #c70d0d;
+    background-size: cover;
+    color: #e0e0e0;
 }
 
 header {
@@ -21,28 +19,7 @@ header {
 
 h1, h2 {
     color: #c9d4d4;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Ombre portée */
-}
-
-.welcome {
-    height: 100vmax; /* Plein écran */
-    display: flex;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Fond noir semi-transparent */
-    justify-content: center;
-    overflow: hidden; /* Masquer le débordement */
-    position: relative; /* Pour l'animation */
-}
-
-.welcome h2 {
-    font-size: 3rem;
-    position: absolute; /* Pour le défilement */
-    animation: scroll 3s linear infinite; /* Animation de défilement */
-}
-
-@keyframes scroll {
-    0% { transform: translateY(100%); } /* Début en bas */
-    100% { transform: translateY(-100%); } /* Fin en haut */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 nav {
@@ -52,34 +29,57 @@ nav {
 
 nav ul {
     list-style-type: none;
-    padding: 20px;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline-block; /* Liens en ligne */
-    margin: 0 60px;
-    padding: 30px 0;
+    display: inline-block;
+    margin: 0 1.5rem;
+}
 
 nav a {
-    text-decoration: navajowhite;
+    text-decoration: none;
     color: #c8dcdd;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
     text-decoration: underline;
+    color: #ffffff;
 }
 
-.content {
-    margin: 30px;
-    padding: 30px;
-    background-color: rgba(24, 10, 10, 0.452);
-    border-radius: 10px;
+.welcome {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.welcome h2 {
+    font-size: 3rem;
+    animation: fadeIn 5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 footer {
     background-color: #333;
-    color: rgb(213, 223, 216);
+    color: #d5dfd8;
     text-align: center;
     padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .welcome h2 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        margin: 0 1rem;
+    }
 }
