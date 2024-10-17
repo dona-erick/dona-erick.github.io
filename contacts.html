@@ -21,14 +21,32 @@
 
     <section id="contact" class="content">
         <h2>Contacts</h2>
-        <p>Contactez-moi ...</p>
-        <p>Email: <a href="mailto:donaerickoulodji@gmail.com">donaerickoulodji@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/dona-erick">LinkedIn</a></p>
-        <p>Medium: <a href="https://medium.com/@koulodjiric">Medium</a></p>
-        <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61559032556758" >Facebook</a></p>
+        <p>Pour toute question ou collaboration, n'hésitez pas à me contacter via les informations ci-dessous :</p>
+
+        <div class="contact-info">
+            <p>Email: <a href="mailto:donaerickoulodji@gmail.com">donaerickoulodji@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/dona-erick">LinkedIn</a></p>
+            <p>Medium: <a href="https://medium.com/@koulodjiric">Medium</a></p>
+            <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61559032556758">Facebook</a></p>
+        </div>
+
+        <h3>Envoyer un message</h3>
+        <form action="mailto:donaerickoulodji@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
     </section>
+
     <footer>
-        <p>&copy; 2024 KOULODJI Dona Eric</p>
+        <p>&copy; 2024 KOULODJI Dona Eric. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
