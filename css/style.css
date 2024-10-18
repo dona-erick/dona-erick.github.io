@@ -250,3 +250,61 @@ footer {
 .service-form button:hover {
     background-color: #333;
 }
+
+/* donner son avis */
+
+#feedback-section {
+    margin: 20px 0;
+}
+
+#feedback-button {
+    background-color: #4e8ba3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+#feedback-button:hover {
+    background-color: #333;
+}
+
+.testimonial-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.testimonial-form label {
+    margin-bottom: 5px;
+}
+
+.testimonial-form input,
+.testimonial-form select,
+.testimonial-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.testimonial-form button {
+    padding: 10px;
+    background-color: #4e8ba3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.testimonial-form button:hover {
+    background-color: #333;
+}
