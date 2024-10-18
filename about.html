@@ -76,7 +76,17 @@
             </form>
         </div>
     </section>
-
+    <!--script java-->
+    <script>
+        document.getElementById("feedback-button").addEventListener("click", function() {
+            const feedbackForm = document.getElementById("feedback-form");
+            if (feedbackForm.style.display === "none") {
+                feedbackForm.style.display = "block";
+            } else {
+                feedbackForm.style.display = "none";
+            }
+        });
+    </script>
     
     
 
