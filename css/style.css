@@ -63,6 +63,9 @@ a:hover {
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav ul li {
@@ -80,6 +83,7 @@ nav a {
 nav a:hover {
     text-decoration: underline;
     color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 .content{
     margin: 30px;
@@ -207,6 +211,17 @@ footer {
 
     nav ul li {
         margin: 0 1rem;
+    }
+}
+
+/*pour les petits ecrans*/
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
     }
 }
 
