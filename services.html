@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Dona Eric KOULODJI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Mes Projects</h1>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="services.html">Mes Services</a></li>
+            </ul>
+        </nav>  
+    </header>
+    <section id="services" class="content">
+        <h2>Demander un service</h2>
+        <p>Si vous avez besoin de mes services, veuillez remplir le formulaire ci-dessous :</p>
+        <form action="https://formspree.io/f/{ton_endpoint}" method="POST" class="service-form">
+            <label for="name">Nom complet :</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+    
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+    
+            <label for="service">Service demandé :</label>
+            <select id="service" name="service">
+                <option value="data-analysis">Analyse de données</option>
+                <option value="machine-learning">Machine Learning</option>
+                <option value="web-development">Développement Web</option>
+                <option value="consulting">Consultation</option>
+            </select>
+    
+            <label for="message">Détails supplémentaires :</label>
+            <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet ou besoin en détails..." required></textarea>
+    
+            <button type="submit">Envoyer la demande</button>
+        </form>
+    </section>
+    
