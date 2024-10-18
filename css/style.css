@@ -6,7 +6,7 @@ body {
     padding: 0;
     background-image: url('../images/stokin.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     color: #b34b4b;
 }
 
